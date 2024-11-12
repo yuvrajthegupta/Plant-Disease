@@ -49,7 +49,7 @@ if uploaded_image is not None:
     col1, col2 = st.columns(2)
 
     with col1:
-        resized_img = image.resize((100, 100))
+        resized_img = image.resize((200, 200))
         st.image(resized_img)
 
     with col2:
