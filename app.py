@@ -22,7 +22,7 @@ def download_model():
 # Download the model only if it doesn't exist
 download_model()
 # Direct Google Drive download URL
-
+st.set_page_config(page_title="Plant Disease Detection Model")
 new_model = tf.keras.models.load_model('best_model_accuracy.keras')
 st.title('Plant Disease Detection Model')
 st.write("Upload an image to predict its class")
